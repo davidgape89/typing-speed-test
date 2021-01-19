@@ -2,11 +2,8 @@
     import { onMount } from 'svelte';
 
     export let isRunning = false;
-    let time = 50;
-
-    function reset() {
-        time = 0;
-    }
+    export let time = 0;
+    export let timeDifference = 1000;
 
     function formatTime(t: number): string {
         const timeString = t.toString();
@@ -15,8 +12,9 @@
 
     onMount(() => {
         const interval = setInterval(() => {
-            if(isRunning) time += 1
-        }, 1000);
+            if(isRunning && time > 0) time -= 1;
+        }, timeDifference);
+
         return () => clearInterval(interval);
     });
 </script>

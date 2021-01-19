@@ -1,0 +1,45 @@
+main.svelte-17lbzb0 {
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto; }
+
+.keyboard.svelte-y4k1cl {
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
+
+.row.svelte-y4k1cl {
+  display: flex; }
+
+.key.svelte-y4k1cl {
+  align-items: center;
+  border-radius: 1rem;
+  display: flex;
+  height: 6rem;
+  justify-content: center;
+  transition: background-color 300ms;
+  width: 6rem; }
+
+.key.spacebar.svelte-y4k1cl {
+  width: 20rem; }
+
+.key.active.svelte-y4k1cl {
+  background-color: lightpink; }
+
+.text-viewer.svelte-15owdbq {
+  font-size: 2rem;
+  height: calc(2rem * 3.1);
+  overflow: hidden; }
+
+span.svelte-15owdbq {
+  border-radius: 1rem;
+  padding: 2px; }
+
+.isActive.svelte-15owdbq {
+  background-color: lightgrey; }
+
+.isInvalid.svelte-15owdbq {
+  background-color: red; }
+
+.isValid.svelte-15owdbq {
+  background-color: lightgreen; }
