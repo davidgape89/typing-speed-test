@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { KeyMap } from './KeyMap';
-	import ActiveKeyMapper from './ActiveKeyMapper.svelte';
-	import Timer from './Timer.svelte';
-	import Keyboard from './Keyboard.svelte';
-	import TextViewer from './TextViewer.svelte';
+	import ActiveKeyMapper from './components/ActiveKeyMapper.svelte';
+	import Timer from './components/Timer.svelte';
+	import Keyboard from './components/Keyboard.svelte';
+	import TextViewer from './components/TextViewer.svelte';
 	import { englishText } from './words';
 
 	let keyMap: KeyMap;

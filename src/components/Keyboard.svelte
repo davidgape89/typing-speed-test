@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { ansiMap } from './ansiMap';
-    import type { KeyMap } from "./KeyMap";
+    import { ansiMap } from '../ansiMap';
+    import type { KeyMap } from "../KeyMap";
 
     export let keyMap: KeyMap = {};
 </script>

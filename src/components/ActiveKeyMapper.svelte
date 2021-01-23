@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { KeyMap } from './KeyMap';
+    import type { KeyMap } from '../KeyMap';
 
     export const keyMap: KeyMap = {};
 
