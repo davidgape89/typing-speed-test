@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
 
     export let isRunning = false;
-    export let time = 0;
+    export let time = 60;
     export let timeDifference = 1000;
 
     function formatTime(t: number): string {
