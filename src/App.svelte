@@ -8,7 +8,7 @@
 
 	let keyMap: KeyMap;
 	let isRunning = false;
-	let time = 60;
+	let time;
 	let value;
 	let wordStack = [];
 	let disabled = false;
@@ -18,7 +18,7 @@
 		value = '';
 		wordStack = [];
 		disabled = false;
-		time = 60
+		time = 60;
 	}
 
 	function handleKeyDown(e: KeyboardEvent) {

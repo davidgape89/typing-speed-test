@@ -6,8 +6,8 @@
     "dev": "rollup -c -w",
     "start": "sirv public",
     "validate": "svelte-check",
-    "test": "jest src",
-    "test:watch": "npm run test -- --watch"
+    "test": "tsc --noEmit && jest src",
+    "test:watch": "tsc --noEmit && npm run test -- --watch"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",

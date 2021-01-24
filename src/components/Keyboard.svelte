@@ -41,11 +41,11 @@
         transition: background-color 300ms;
         width: 6rem;
 
-        .spacebar {
+        &.spacebar {
             width: 20rem;
         }
 
-        .active {
+        &.active {
             background-color: lightpink;
         }
     }

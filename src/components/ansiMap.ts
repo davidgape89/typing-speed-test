@@ -1,6 +1,7 @@
 interface KeyboardKey {
-    key ? : string;
-    icon ? : string;
+    key: string;
+    icon?: string;
+    text?: string;
 }
 
 export const ansiMap: KeyboardKey[][] = [
@@ -87,5 +88,6 @@ export const ansiMap: KeyboardKey[][] = [
     ],
     [{
         key: ' ',
+        text: 'Space',
     }],
 ];
