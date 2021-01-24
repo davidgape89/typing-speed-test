@@ -1,20 +1,20 @@
 <script lang="ts">
-    import { ansiMap } from '../ansiMap';
+    import { ansiMap } from './ansiMap';
     import type { KeyMap } from "../KeyMap";
 
     export let keyMap: KeyMap = {};
 </script>
 
-<div class="keyboard">
+<div class="keyboard" role="none">
     {#each ansiMap as row}
         <div class="row">
-            {#each row as {key}}
+            {#each row as {key, text}}
                 <div
                     class="key"
                     class:active={keyMap[key]}
                     class:spacebar={key === ' '}
                 >
-                    {key}
+                    {text || key}
                 </div>
             {/each}
         </div>
