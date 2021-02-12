@@ -19,6 +19,7 @@
 		wordStack = [];
 		disabled = false;
 		time = 60;
+		isRunning = false;
 	}
 
 	function handleKeyDown(e: KeyboardEvent) {
@@ -36,9 +37,12 @@
 				return;
 			case ' ':
 				e.preventDefault();
-				wordStack = [...wordStack, value];
-				value = '';
-				break;
+				e.stopPropagation();
+				if (value.length) {
+					wordStack = [...wordStack, value];
+					value = '';
+				}
+				return;
 		}
 	}
 
