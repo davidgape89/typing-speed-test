@@ -1,5 +1,4 @@
-import { render, screen } from "@testing-library/svelte";
-import { tick } from "svelte";
+import { render } from "@testing-library/svelte";
 import Keyboard from './Keyboard.svelte';
 import { ansiMap } from './ansiMap';
 
@@ -7,8 +6,8 @@ const keys = [].concat(...ansiMap);
 
 describe('Keyboard', () => {
     test('renders correctly', () => {
-        const { getByText } = render(Keyboard);
-        const keyboard = screen.getByRole('none');
+        const { getByText, getByRole } = render(Keyboard);
+        const keyboard = getByRole('none');
 
         expect(keyboard).toBeDefined();
 
