@@ -3,11 +3,10 @@
 
     export let words = [];
     export let wordStack = [];
-    export let activeInput = null;
 
     afterUpdate(() => {
-        const activeEl: HTMLElement | null = document.querySelector('.active');
-        if(activeEl) activeEl.scrollIntoView({block: 'center'});
+        const activeEl: HTMLElement | null = document.querySelector(".active");
+        if (activeEl) activeEl.scrollIntoView({ block: "center" });
     });
 </script>
 
@@ -16,10 +15,11 @@
         <span
             class:active={wordStack.length === i}
             class:valid={wordStack[i] && wordStack[i] === words[i]}
-            class:invalid={wordStack[i] && wordStack[i] !== words[i]}>
+            class:invalid={wordStack[i] && wordStack[i] !== words[i]}
+        >
             {word}
         </span>
-        <span> </span>
+        <span />
     {/each}
 </div>
 
